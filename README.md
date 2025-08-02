@@ -13,12 +13,6 @@ Clone the project
   git clone https://github.com/mitch1625/microserviceA.git
 ```
 
-Go to the project directory
-
-```bash
-  cd teammateMicroservice
-```
-
 Create a virtual environment and install dependencies
 
 ```bash
