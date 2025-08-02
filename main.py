@@ -42,13 +42,13 @@ class FileDetector(FileSystemEventHandler):
     if event.src_path.lower().endswith(('.jpg', '.jpeg', '.png')):
       print(f"Detected file: {event.src_path}")
       date_time = extract_datetime(event.src_path)
-      print(date_time)
+
 
       if date_time is None:
         data['date'] = 'null'
       else:
         data['date'] = date_time
-      print(data)
+
     else:
       os.remove(event.src_path)
       data['date'] = 'null'
@@ -70,7 +70,7 @@ def start_observer():
 
 def post_date(date):
   payload = {"date": date}
-  print(date)
+
   try:
     response = requests.post(API_ENDPOINT, json=payload)
     print(f"POST sent. Status Code: {response.status_code}, Response: {response.text}")
