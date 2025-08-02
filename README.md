@@ -3,7 +3,7 @@
 
 This microservice receives an image in `.jpg`, `.jpeg`, or `.png` format and extracts the “Exif.Image.DateTime” from the exif metadata of the image. It returns this data as a single line JSON-formatted response with the date in MM-DD-YYYY format.
 
-
+  
 
 ## Run Locally
 
