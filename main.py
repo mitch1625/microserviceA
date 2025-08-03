@@ -71,9 +71,8 @@ def start_observer():
 
 @app.route('/date', methods=["POST"])
 def receive_date():
-    data = request.get_json()
-    print('API Data: ', data)
-    return jsonify(data)
+    print('Returned: ', request.json)
+    return request.json
 
 def run_flask_and_observer():
   observer_thread = threading.Thread(target=start_observer, daemon=True)
