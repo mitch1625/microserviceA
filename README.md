@@ -17,7 +17,7 @@ Clone the project
 ```bash
   git clone https://github.com/mitch1625/microserviceA.git
 ```
-
+![sequence_diagram.png](sequence_diagram.png)
 Create a virtual environment and install dependencies
 
 ```bash
