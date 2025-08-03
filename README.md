@@ -9,7 +9,7 @@ If DateTime is present, `{'date' : 'MM-DD-YYYY}` is returned, where `MM-DD-YYYY`
 2. The extracted data is automatically returned as a `POST` request to the specified API endpoint in the `main.py` file.  If an image was processed and a DateTime was found, the call would return ```{'date' : '07-05-2005'}```.
 
 
-![img.png](sequence_diagram.png)
+![sequence_diagram.png](sequence_diagram.png)
 ## Run Locally
 
 Clone the project
